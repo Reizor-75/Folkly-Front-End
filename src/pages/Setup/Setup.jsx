@@ -1,6 +1,9 @@
 //npm module
 import { useState } from "react"
 
+//components
+import RadioSelect from "../../components/RadioSelect/RadioSelect"
+
 //css
 import styles from "./Setup.module.css" 
 
@@ -23,26 +26,7 @@ const Setup = () => {
       <form form autoComplete="off" className={styles.form}>
         <label className={styles.label}>
           What culture would you learn from?
-          <div className={styles.radioSelect}>
-            <div className={styles.radioInput}>
-              <input
-                type="radio"
-                value={culture}
-                name="culture"
-                onChange={handleChange}
-              /> 
-              <>Culture 1</>
-            </div>
-            <div className={styles.radioInput}>
-              <input
-                type="radio"
-                value={culture}
-                name="culture"
-                onChange={handleChange}
-              /> 
-              <>Culture 2</>
-            </div>
-          </div>
+          <RadioSelect inputInfo={"none"} type={`culture`} handleChange={handleChange}/>
         </label>
         <label className={styles.label}>
           What language would you learn?
@@ -58,7 +42,7 @@ const Setup = () => {
           <input
             type="text"
             value={popCultureTypes}
-            name="popCult"
+            name="popCultureTypes"
             onChange={handleChange}
           />
         </label>
