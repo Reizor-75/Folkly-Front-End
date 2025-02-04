@@ -1,0 +1,44 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-left: 16px;
+  padding: 4px 8px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.label {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.radioSelect{
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  width: 300px;
+  input{
+    width: unset;
+    padding: 4px 8px;
+    margin-right: 8px;
+  }
+}
+
+.radioInput{
+  display: flex;
+  justify-content: left;
+}

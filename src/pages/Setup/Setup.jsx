@@ -20,15 +20,29 @@ const Setup = () => {
   return ( 
     <main className={styles.container}>
       <div>Profile set up</div>
-      <form action="">
+      <form form autoComplete="off" className={styles.form}>
         <label className={styles.label}>
           What culture would you learn from?
-          <input
-            type="text"
-            value={culture}
-            name="culture"
-            onChange={handleChange}
-          />
+          <div className={styles.radioSelect}>
+            <div className={styles.radioInput}>
+              <input
+                type="radio"
+                value={culture}
+                name="culture"
+                onChange={handleChange}
+              /> 
+              <>Culture 1</>
+            </div>
+            <div className={styles.radioInput}>
+              <input
+                type="radio"
+                value={culture}
+                name="culture"
+                onChange={handleChange}
+              /> 
+              <>Culture 2</>
+            </div>
+          </div>
         </label>
         <label className={styles.label}>
           What language would you learn?
