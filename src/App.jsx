@@ -64,7 +64,7 @@ function App() {
           }
         />
         <Route
-          path="/auth/signup/setup"
+          path="/setup"
           element={
             <ProtectedRoute user={user}>
               <Setup handleAuthEvt={handleAuthEvt} />
