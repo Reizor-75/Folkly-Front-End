@@ -8,6 +8,7 @@ import Login from './pages/Login/Login'
 import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
+import Setup from './pages/Setup/Setup'
 
 // components
 import NavBar from './components/NavBar/NavBar'
@@ -59,6 +60,14 @@ function App() {
           element={
             <ProtectedRoute user={user}>
               <ChangePassword handleAuthEvt={handleAuthEvt} />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/auth/signup/setup"
+          element={
+            <ProtectedRoute user={user}>
+              <Setup handleAuthEvt={handleAuthEvt} />
             </ProtectedRoute>
           }
         />
