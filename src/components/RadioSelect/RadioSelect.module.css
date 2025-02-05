@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   margin-left: 16px;
-  width: 300px;
+  width: 100%;
+  font-size: var(--font-m);
+  font-weight: 500;
   input{
-    width: unset;
+    width: 10px;
     padding: 4px 8px;
     margin-right: 8px;
   }
@@ -13,4 +15,13 @@
 .radioInput{
   display: flex;
   justify-content: left;
+  border: solid var(--font-color);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+}
+
+.radioInput:hover{
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }

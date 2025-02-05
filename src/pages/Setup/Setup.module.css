@@ -15,7 +15,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .label {
@@ -25,4 +25,9 @@ input {
   justify-content: end;
   align-items: center;
   margin-bottom: 8px;
+}
+
+.questionTitle{
+  font-size: var(--font-xl);
+  font-weight: 700;
 }
