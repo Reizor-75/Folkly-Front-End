@@ -7,8 +7,7 @@ import styles from './Landing.module.css'
 const Landing = ({ user }) => {
   return (
     <main className={styles.container}> 
-    {
-      user ?
+    {user ?
       <div className={styles.pageContent}>
         <div className={styles.pageTitle}>Welcome {user.name}</div>
         <div className={styles.chooseCult}>user.</div>
