@@ -1,16 +1,46 @@
 // npm modules
+import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
+
+// services 
+import * as profileService from "../../services/profileService"
 
 // css
 import styles from './Landing.module.css'
 
 const Landing = ({ user }) => {
+  const [profile, setProfile] = useState()
+
+  useEffect (()=>{
+    const fetchProfile = async() =>{
+      const data = await profileService.getProfile(user.profile)
+      setProfile(data)
+    } 
+    if(user) fetchProfile()
+  },[user])
+
   return (
     <main className={styles.container}> 
-    {user ?
+    {user && profile ?
       <div className={styles.pageContent}>
-        <div className={styles.pageTitle}>Welcome {user.name}</div>
-        <div className={styles.chooseCult}>user.</div>
+        <div className={styles.pageTitle}>Welcome {profile.name}</div>
+        <div className={styles.profileCult}>
+          {profile.culture ?
+            <>
+              <div className={styles.choosenCult}>
+                <div className={styles.cultureTitle}>{profile.culture}</div>
+              </div>
+              <div className={styles.curPopLesson}>
+
+              </div>
+            </>
+            : 
+            <div className={styles.choosenCult}>
+              <div className={styles.cultureTitle}>No Culutre Selected</div>
+              <NavLink to="/Setup"><button className={styles.button}>Setup culture</button> </NavLink>
+            </div>
+            }
+        </div>
       </div>
       :
       <div className={styles.left}>

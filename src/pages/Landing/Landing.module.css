@@ -50,6 +50,7 @@ button:hover{
 
 .pageContent{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 80vw;
 }
@@ -57,5 +58,27 @@ button:hover{
 .pageTitle{
   font-size: var(--font-xxl);
   font-weight: 600;
-  
+
+}
+
+.profileCult{
+  display: flex;
+  /* justify-content: \]; */
+  margin: 24px 0;
+  padding: 16px 8px;
+  width: 100%;
+  background-color: var(--main-color);
+  color: var(--background-color);
+
+}
+
+.cultureTitle{
+  font-size: var(--font-xl);  
+  font-weight: 600;
+}
+
+.button{
+  margin: 8px 0;
+  padding: 8px;
+  font-size: var(--font-s);
 }
