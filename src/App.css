@@ -4,6 +4,22 @@
   box-sizing: inherit;
 }
 
+:root {
+  --main-color: #391aa8;
+  --font-color: #33334D;
+  --background-color: white;
+  --accent-color: #61bbc3;
+  --selected-color: #f2e3d0;
+  --font-xs: .8em;
+  --font-s: 1em;
+  --font-m: 1.3em;
+  --font-l: 1.6em;
+  --font-xl: 2em;
+  --font-xxl: 3em;
+  --font-header: "Barlow Condensed", sans-serif;
+  --font-text: "Hanuman", serif;
+}
+
 body {
   box-sizing: border-box;
 
@@ -12,8 +28,8 @@ body {
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--font-color);
+  background-color: var(--background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,11 +40,10 @@ body {
 
 a,
 a:visited {
-  color: #00d8ff
+  color: var(--accent-color)
 }
 
 nav > ul {
   margin: 0;
   padding: 16px 32px;
 }
-

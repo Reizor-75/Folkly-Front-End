@@ -1,0 +1,18 @@
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-color);
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  background-color: white;
+  font-size: var(--font-l);
+  font-weight: 700;
+  border-radius: 50%;
+  padding: 8px;
+  margin: 16px;
+}
