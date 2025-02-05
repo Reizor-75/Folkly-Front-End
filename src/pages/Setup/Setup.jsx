@@ -42,16 +42,16 @@ const Setup = () => {
   }
   return ( 
     <main className={styles.container}>
-      <h1>Profile set up</h1>
+      {/* <h1>Profile set up</h1> */}
       <form form autoComplete="off" className={styles.form}>
         <label className={styles.label}>
-          What culture would you learn from?
+          <div className={styles.questionTitle}>What culture would you learn from?</div>
           {cultures.map(culture => (        
               <RadioSelect key={culture.id} inputInfo={culture} type='culture' handleChange={handleChange}/>
             ))
           }
         </label>
-        <label className={styles.label}>
+        {/* <label className={styles.label}>
           What language would you learn?
           {cultures.map(culture => (        
               <RadioSelect key={culture.id} inputInfo={culture} type='lang' handleChange={handleChange}/>
@@ -61,7 +61,7 @@ const Setup = () => {
         <label className={styles.label}>
           Which Pop Culture category do you enjoy the most?
           <RadioSelect inputInfo={"none"} type='culture' handleChange={handleChange}/>
-        </label>
+        </label> */}
       </form>
     </main>
   );
