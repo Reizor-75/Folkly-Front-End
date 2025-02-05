@@ -40,7 +40,8 @@ body {
 
 a,
 a:visited {
-  color: var(--accent-color)
+  color: var(--accent-color);
+  text-decoration:none;
 }
 
 nav > ul {

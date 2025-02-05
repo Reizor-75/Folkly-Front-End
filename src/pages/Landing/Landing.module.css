@@ -2,4 +2,60 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  width: 50vw;
+  height: 90vh
+}
+
+.logon{
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  background-color: var(--background-color);
+  font-weight: 600;
+  font-size: var(--font-m);
+  padding: 12px;
+  border-radius: 8px;
+  margin: 16px;
+}
+
+button:hover{
+  background-color: var(--accent-color);
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  background-color: white;
+  font-size: var(--font-xxl);
+  font-weight: 700;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 8px;
+  margin: 16px;
+}
+
+.pageContent{
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+
+.pageTitle{
+  font-size: var(--font-xxl);
+  font-weight: 600;
+  
 }
