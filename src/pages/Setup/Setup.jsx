@@ -12,7 +12,7 @@ import * as cultureService from '../../services/cultureService'
 import styles from "./Setup.module.css" 
 
 const Setup = () => {
-  const [culturesData, setcultures] = useState()
+  const [cultures, setcultures] = useState()
 
   useEffect(() => {
       const fetchProfiles = async () => {
@@ -35,17 +35,28 @@ const Setup = () => {
 
   // const { culture, lang, popCultureTypes } = formData
 
+  if(!cultures){
+    return(
+      <h1>loading...</h1>
+    )
+  }
   return ( 
     <main className={styles.container}>
       <h1>Profile set up</h1>
       <form form autoComplete="off" className={styles.form}>
         <label className={styles.label}>
           What culture would you learn from?
-          <RadioSelect inputInfo={"none"} type='culture' handleChange={handleChange}/>
+          {cultures.map(culture => (        
+              <RadioSelect key={culture.id} inputInfo={culture} type='culture' handleChange={handleChange}/>
+            ))
+          }
         </label>
         <label className={styles.label}>
           What language would you learn?
-          <RadioSelect inputInfo={"none"} type='lang' handleChange={handleChange}/>
+          {cultures.map(culture => (        
+              <RadioSelect key={culture.id} inputInfo={culture} type='lang' handleChange={handleChange}/>
+            ))
+          }
         </label>
         <label className={styles.label}>
           Which Pop Culture category do you enjoy the most?
