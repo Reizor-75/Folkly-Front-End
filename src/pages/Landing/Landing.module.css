@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .left{
@@ -11,13 +11,18 @@
   justify-content: center;
   align-items: center;
   background-color: var(--main-color);
-  width: 50vw;
-  height: 90vh
+  width: 50%;
+  height: 85vh;
+}
+
+.right{
+  width: 50%;
 }
 
 .logon{
   display: flex;
   justify-content: space-between;
+  height: max-content;
 }
 
 button{
@@ -53,6 +58,13 @@ button:hover{
   flex-direction: column;
   justify-content: center;
   width: 80vw;
+}
+
+.noUserContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
 .pageTitle{

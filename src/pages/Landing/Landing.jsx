@@ -43,13 +43,18 @@ const Landing = ({ user }) => {
         </div>
       </div>
       :
-      <div className={styles.left}>
-        <div className={styles.logo}>Folkly</div>
-        <div className={styles.logon}>  
-          <NavLink to="/auth/login"><button>Log In</button></NavLink>
-          <NavLink to="/auth/signup"><button>Sign up</button></NavLink>
-        </div>   
-    </div>
+      <div className={styles.noUserContent}>
+        <div className={styles.left}>
+          <div className={styles.logo}>Folkly</div>
+          <div className={styles.logon}>  
+            <NavLink to="/auth/login"><button>Log In</button></NavLink>
+            <NavLink to="/auth/signup"><button>Sign up</button></NavLink>
+          </div>   
+        </div>
+        <div className={styles.right}>
+          <img src="" alt="Landing Page" />
+        </div>
+      </div>
     }
     </main>
   )
