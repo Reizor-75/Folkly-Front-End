@@ -18,33 +18,23 @@ const Setup = () => {
     setFormData({ ...formData, [evt.target.name]: evt.target.value })
   }
 
-  const { culture, lang, popCultureTypes } = formData
+  // const { culture, lang, popCultureTypes } = formData
 
   return ( 
     <main className={styles.container}>
-      <div>Profile set up</div>
+      <h1>Profile set up</h1>
       <form form autoComplete="off" className={styles.form}>
         <label className={styles.label}>
           What culture would you learn from?
-          <RadioSelect inputInfo={"none"} type={`culture`} handleChange={handleChange}/>
+          <RadioSelect inputInfo={"none"} type='culture' handleChange={handleChange}/>
         </label>
         <label className={styles.label}>
           What language would you learn?
-          <input
-            type="text"
-            value={lang}
-            name="lang"
-            onChange={handleChange}
-          />
+          <RadioSelect inputInfo={"none"} type='lang' handleChange={handleChange}/>
         </label>
         <label className={styles.label}>
           Which Pop Culture category do you enjoy the most?
-          <input
-            type="text"
-            value={popCultureTypes}
-            name="popCultureTypes"
-            onChange={handleChange}
-          />
+          <RadioSelect inputInfo={"none"} type='culture' handleChange={handleChange}/>
         </label>
       </form>
     </main>
