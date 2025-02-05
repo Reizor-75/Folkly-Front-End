@@ -43,7 +43,7 @@ const Setup = () => {
   return ( 
     <main className={styles.container}>
       {/* <h1>Profile set up</h1> */}
-      <form form autoComplete="off" className={styles.form}>
+      <form form autoComplete="off" className={styles.form} onChange={handleChange}>
         <label className={styles.label}>
           <div className={styles.questionTitle}>What culture would you learn from?</div>
           {cultures.map(culture => (        

@@ -15,13 +15,15 @@
 .radioInput{
   display: flex;
   justify-content: left;
-  border: solid var(--font-color);
+  /* border: solid var(--font-color); */
   border-radius: 8px;
   padding: 16px;
   margin: 8px;
+  box-shadow: 2px 2px 4px var(--font-color);
 }
 
 .radioInput:hover{
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  /* background-color: var(--accent-color);
+  border-color: var(--accent-color); */
+  box-shadow: 2px 2px 4px rgba(0,0,0,.2) inset;
 }

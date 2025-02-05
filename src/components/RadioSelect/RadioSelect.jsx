@@ -16,7 +16,7 @@ const RadioSelect= ({inputInfo, type, handleChange}) => {
           type="radio"
           value={`${setType()}`}
           name={type}
-          onChange={handleChange}
+          onChange={()=>handleChange}
         /> 
         <>{`${setType()}`}</>
       </div>
