@@ -1,13 +1,28 @@
 //npm module
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 //components
 import RadioSelect from "../../components/RadioSelect/RadioSelect"
+
+//services
+
+import * as cultureService from '../../services/cultureService'
 
 //css
 import styles from "./Setup.module.css" 
 
 const Setup = () => {
+  const [culturesData, setcultures] = useState()
+
+  useEffect(() => {
+      const fetchProfiles = async () => {
+        const culturesData = await cultureService.getAllCultures()
+        setcultures(culturesData)
+      }
+      fetchProfiles()
+    }, [])
+
+
   const [formData, setFormData] = useState({
     culture: '',
     lang: '',
