@@ -2,4 +2,95 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  /* width: 100vw; */
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  width: 50%;
+  height: 85vh;
+}
+
+.right{
+  width: 50%;
+}
+
+.logon{
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+}
+
+button{
+  background-color: var(--background-color);
+  font-weight: 600;
+  font-size: var(--font-m);
+  padding: 12px;
+  border-radius: 8px;
+  margin: 16px;
+}
+
+button:hover{
+  background-color: var(--accent-color);
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  background-color: white;
+  font-size: var(--font-xxl);
+  font-weight: 700;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 8px;
+  margin: 16px;
+}
+
+.pageContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+}
+
+.noUserContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.pageTitle{
+  font-size: var(--font-xxl);
+  font-weight: 600;
+
+}
+
+.profileCult{
+  display: flex;
+  /* justify-content: \]; */
+  margin: 24px 0;
+  padding: 16px 8px;
+  width: 100%;
+  background-color: var(--main-color);
+  color: var(--background-color);
+
+}
+
+.cultureTitle{
+  font-size: var(--font-xl);  
+  font-weight: 600;
+}
+
+.button{
+  margin: 8px 0;
+  padding: 8px;
+  font-size: var(--font-s);
 }

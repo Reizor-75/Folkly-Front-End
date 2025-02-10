@@ -1,0 +1,33 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-left: 16px;
+  padding: 4px 8px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.questionTitle{
+  font-size: var(--font-xl);
+  font-weight: 700;
+}

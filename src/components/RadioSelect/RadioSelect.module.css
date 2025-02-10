@@ -1,0 +1,29 @@
+.radioSelect{
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  width: 100%;
+  font-size: var(--font-m);
+  font-weight: 500;
+  input{
+    width: 10px;
+    padding: 4px 8px;
+    margin-right: 8px;
+  }
+}
+
+.radioInput{
+  display: flex;
+  justify-content: left;
+  /* border: solid var(--font-color); */
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  box-shadow: 2px 2px 4px var(--font-color);
+}
+
+.radioInput:hover{
+  /* background-color: var(--accent-color);
+  border-color: var(--accent-color); */
+  box-shadow: 2px 2px 4px rgba(0,0,0,.2) inset;
+}
